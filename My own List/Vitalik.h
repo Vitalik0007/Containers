@@ -14,11 +14,13 @@ private:
 		Node(int dat = 0, Node* n = NULL) : data(dat), next(n) {}
 	};
 	Node* begin;
+	int _size;
 public:
-	Container() : begin(NULL) {}
+	Container() : begin(NULL), _size(0) {}
 	~Container();
 	void push(int el);
 	void show();
+	int size() const {return _size;}
 	void pop();
 };
 
