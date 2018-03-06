@@ -14,7 +14,8 @@ int main()
 	}
 	c.pop();
 	c.show();
-
+	cout << c.size() << endl;
+	
 	system("pause");
 	return 0;
 }
