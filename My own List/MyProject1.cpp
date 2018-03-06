@@ -37,6 +37,7 @@ void Container::push(int el)
 		bef2->next = temp;
 		temp->next = bef;
 	}
+	_size++;
 }
 
 void Container::pop()
@@ -81,4 +82,5 @@ void Container::pop()
 			bef = bef2->next;
 		}
 	}
+	_size--;
 }
